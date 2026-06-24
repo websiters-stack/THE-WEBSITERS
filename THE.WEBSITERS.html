@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Welcome to Websites Made by Aditya Tiwari</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ffd6e8,#e0c3fc,#c3f0ff);
+    text-align:center;
+    overflow-x:hidden;
+}
+
+/* Flower Decorations */
+.flower{
+    position:fixed;
+    font-size:40px;
+    z-index:1000;
+}
+
+.f1{top:10px;left:10px;}
+.f2{top:10px;right:10px;}
+.f3{bottom:10px;left:10px;}
+.f4{bottom:10px;right:10px;}
+
+/* Home Page Card */
+.card{
+    background:rgba(255,255,255,0.9);
+    width:350px;
+    margin:100px auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+h1{
+    color:#4a148c;
+}
+
+p{
+    color:#444;
+    font-size:16px;
+}
+
+/* Buttons */
+.main-btn{
+    background:#7b1fa2;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.main-btn:hover{
+    transform:scale(1.05);
+}
+
+#helpPage{
+    display:none;
+    padding-top:50px;
+}
+
+.option-btn{
+    width:280px;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:12px;
+    background:white;
+    font-size:16px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.contact{
+    margin-top:5px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.back-btn{
+    background:#e91e63;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Flower Decorations -->
+<div class="flower f1">🌸</div>
+<div class="flower f2">🌺</div>
+<div class="flower f3">🌷</div>
+<div class="flower f4">💐</div>
+
+<!-- Home Page -->
+<div id="homePage">
+    <div class="card">
+
+        <h1>🌸 Welcome to Websites Made by Aditya Tiwari 🌸</h1>
+
+        <p>
+            💻 Professional Website Creation Services 💻
+            <br><br>
+            Shop Websites • Portfolio Websites
+            <br>
+            School Projects • Custom Websites
+        </p>
+
+        <button class="main-btn" onclick="openHelp()">
+            🚀 Welcome
+        </button>
+
+    </div>
+</div>
+
+<!-- Help Page -->
+<div id="helpPage">
+
+    <h1>💻🌸 How Can I Help You In Coding? 🌸💻</h1>
+
+    <p>Select the type of website you want to build:</p>
+    <p>price=25=30k
+    <button class="option-btn">🛒 Shop Website</button>
+    <div class="contact">📞 Contact: 7011126207</div><p>price=5k rupees
+
+    <button class="option-btn">🎨 Portfolio Website</button>
+    <div class="contact">📞 Contact: 7011126207</div><p>price=2k rupees
+
+    <button class="option-btn">🏫 School Project Website</button>
+    <div class="contact">📞 Contact: 7011126207</div><p>price=depends on website
+
+    <button class="option-btn">🌐 Other Website</button>
+    <div class="contact">📞 Contact: 7011126207</div>
+    
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+</div>
+
+<script>
+function openHelp(){
+    document.getElementById("homePage").style.display = "none";
+    document.getElementById("helpPage").style.display = "block";
+}
+
+function goBack(){
+    document.getElementById("helpPage").style.display = "none";
+    document.getElementById("homePage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
